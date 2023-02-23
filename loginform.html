@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login.css" type="text/css">
+
+  <title></title>
+  <script>
+     //----------------------------------------------
+    //Added By : Basant Gera
+    //Added On : 16 Feb 2023
+    // Description : Validation on click of submit button
+    //----------------------------------------------
+    function fncValidate(){
+      var EmailAddress=document.getElementById("txtemail").value;
+      var Password=document.getElementById("txtpassword").value;
+      var StoreLabelInnerHTML=document.getElementById('erroruserid');
+      if(EmailAddress == ""){
+       StoreLabelInnerHTML.innerHTML= "Please enter your Email Address";
+       document.getElementById("txtemail").focus;
+       return false;
+     }
+  
+      else{
+        if(validEmail(EmailAddress) == false){
+        StoreLabelInnerHTML.innerHTML = "Please enter the valid Email address";
+        document.getElementById('txtemail').focus();
+        return false;
+        }
+     }
+
+      if(Password ==""){
+        StoreLabelInnerHTML.innerHTML = "Please enter your  Password";
+        document.getElementById('txtpassword').focus();
+        return false;
+      }
+      
+
+    if(EmailAddress!="" && Password != ""){
+     window.location.href="dashboard.html";
+
+   }
+ 
+
+ }
+
+  //----------------------------------------------
+    //Added By : Basant Gera
+    //Added On : 16 Feb 2023
+    // Description : Regex for Email
+    //----------------------------------------------
+ 
+
+function validEmail(email) {
+    var filter = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+    return String(email).search (filter) != -1;
+}
+ 
+</script>
+<style>
+ body
+ 
+ .form{
+  width: 350px;
+  height: 510px;
+  background: #F9F3F3;
+  position: absolute;
+  top: 10px;
+  left: 470px;
+  border-radius: 30px;
+  padding: 35px;
+  margin-top: 23px;
+}
+
+
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  margin-left: 40px;
+  margin-top: 10px;
+  border: 1px solid #154360 ;
+  border-radius: 10px;
+  color: #154360;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+
+
+
+.btn{
+  width: 240px;
+  height: 40px;
+  background: #154360 ;
+  margin-left: 40px;
+  border: none;
+
+  font-size: 18px ;
+  border-radius: 10px ;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+  <div>
+    <div class="form">
+      <img src="logo.png" style="width:40%; height: 16%; margin-left: 33%; margin-top: 10px;">
+      <br>
+      <br><br>
+
+      <label for="lblEmailAdress" class="form-label" style="font-size: 15px;margin-left: 40px; color: #154360;">Email Address</label>
+
+      <input type="email" id="txtemail"  class="form-control"   tabindex="1" maxlength="25"  placeholder="Enter Email or Phone number">
+      <br>
+          <br>
+      <br>
+
+      <label for="lblPassword"class="form-label" style="font-size: 15px;margin-left: 40px; color: #154360;"> Password</label>
+      &nbsp;
+      <input type="password" class="form-control" id="txtpassword" tabindex="2" maxlength="25" placeholder="Enter Password Here">
+     
+      <br>
+
+          <p id="erroruserid"  style="font-size: 12px; color: red;font-style: italic;"></p>
+        
+      <br><br>
+      <button class="btn" id="btnSubmit" onclick="fncValidate();">Login</button>
+
+
+      <p class="link" style="text-align: center; color: #154360;">Don't have an account<br>
+
+        <a href="registration.html" style="color: #154360; ">Sign up</a> here</a></p>
+        <br>
+
+        <label style="text-align:center; font-size:.7em; color: grey; margin-left: 90px; ">Terms & Condition, Private Policy</label>
+        <br><br>
+
+        <footer>
+         <label style="font-size:.9em; color:  #154360;  margin-left: 40px;"> @ 2023 Digi Wallet Designed by Lubna Ashraf</label>
+       </footer>
+
+     </div>
+
+   </div>
+
+ </body>
+ </html>
+
+

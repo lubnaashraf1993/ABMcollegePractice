@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<style>
+		body {
+			background:#f0f0f0;
+		}
+		.nav {
+			left:90%;
+			margin-left:-150px;
+/*        top:20px;*/
+position:absolute;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background:#fff;
+}
+.dropdown {
+	background:#fff;
+	border:1px solid black;
+	border-radius:4px;
+	width:180px;
+}
+.dropdown-menu>li>a {
+	color:black;
+}
+.dropdown ul.dropdown-menu {
+	border-radius:4px;
+	box-shadow:none;
+/*        margin-top:20px;*/
+width:180px;
+}
+.dropdown ul.dropdown-menu:before {
+	content: "";
+	border-bottom: 10px solid ;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	position: absolute;
+	top: -10px;
+	right: 16px;
+	z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+	content: "";
+	border-bottom: 12px solid #ccc;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	position: absolute;
+	top: -12px;
+	right: 14px;
+	z-index: 9;
+}
+
+.p{
+	text-align: left;
+	padding: 30px;
+}
+table,tr,th,td{
+	text-align: center;
+}
+.b {
+	vertical-align: text-left;
+}
+</style>
+</head>
+<body>
+	
+	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:18%;height:0px auto;
+	background-color: #F9F3F3;
+	border: 1px solid black;
+	border-radius: 3%;">
+
+	<img src="logo.png" style="width:75px; height: 65px; margin-left: 25%; margin-top: 20px;">
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="p">
+		<p><img src="card-checklist.svg"  style="width:25px;height: 25px;">  Portfolio</p>
+		
+
+		<br>
+
+		<p><img src="star.svg" style="width:25px;height: 25px;" >  Watchlist</p>
+
+		<br>
+
+		<p><img src="gear.svg" style="width:25px;height: 25px;">   Setting</p>
+
+		<br>
+		<p><img src="question-circle.svg"style="width:25px;height: 25px;">   FAQ</p>
+
+		<br>
+		<p><img src="person-lines.svg"style="width:25px;height: 25px;">   Contacts</p>
+
+		<hr>
+
+		<br>
+		<p>Term of Service <img src="arrow-up.svg"style="width:25px;height: 25px;"> </p>
+		<br>
+		<br>
+
+	</div>
+
+</div>
+<br>
+
+<div>
+	<br>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+
+				<span style="font-size: 1.5em;margin-top:10px"><b>Dashboard Digital Wallet</b></span>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-1 col-sm-1 col-xl-1 col-lg-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> ----Select----<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">CAD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">USD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-md-1  col-sm-1 col-xl-1 col-lg-1">
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lubna Ashraf <span class="glyphicon glyphicon-user pull-right"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Change Password <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>
+				<br>
+
+			</div>
+
+		</div>
+
+		<br><br>
+
+
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+
+				<h3 style="font-size: 1.5em;">Net Worth $ 11,000</h3>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+
+		</div>
+		<br>
+		<br>
+
+
+
+
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-4 col-sm-4 col-xl-4 col-lg-4">
+
+				<span style="font-size: 1.5em;"><b>Asset</b></span>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+			</div>
+			<div class="col-md-1 col-sm-2 col-xl-1 col-lg-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> List View<img src="card-checklist.svg"style="width:25px;height: 25px;float: right;"></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">CAD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">USD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- <button type="button" style="background-color:#F9F3F3; width: 120px;padding:4px;border-radius: 10px;text-align: right;"><img src="card-checklist.svg"style="width:25px;height: 25px;float: left;">List View</button> -->
+			</div>
+			<div class="col-md-1 col-sm-2 col-xl-1 col-lg-1">
+			</div>
+			<div class="col-md-2 col-sm-2 col-xl-2 col-lg-2">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Debit<img src="credit-card.svg"style="width:20px;height: 20px;float: right;"></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Credit<img src="credit-card-2-front.svg"style="width:20px;height: 20px;float: right;"></a></li>
+							<li class="divider"></li>
+							<li><a href="#">All <img src="check2-all.svg"style="width:20px;height: 20px;float: right;" ></a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- <button type="button" style="background-color:#F9F3F3; width: 170px;padding:4px;border-radius: 10px;text-align: center;">  <img src="arrow-left.svg"style="width:20px;height: 20px;float: left;"> Debit Credit <img src="arrow-right.svg"style="width:20px;height: 20px;">All </button> -->
+			</div>
+
+		</div>
+		<br>
+
+		<br><br>
+		<table class="table" style="margin-left: 15%;width: 90%; border: 1px solid black;border-radius: 10px;">
+
+			<thead>
+				<tr>
+					<th scope="col">Date <img src="arrow-down-up.svg"style="width:20px;height: 20px;"> </th>
+					<th>Transactions <img src="arrow-down-up.svg"style="width:20px;height: 20px;"></th>
+					<th>Amount <img src="arrow-down-up.svg"style="width:20px;height: 20px;"></th>
+					<th>Balance<img src="arrow-down-up.svg"style="width:20px;height: 20px;"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+				<tr>
+					<td>2023/2/2</td>
+					<td>Transaction #1234From/ToCAD/USAbalanc</td>
+					<td>10,000 CAD</td>
+					<td>12,000 CAD</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<br>
+		<br>
+		<label style="margin-left: 40%;"> @ 2023 Digi Wallet Designed by Lubna Ashraf</label>
+	</div>
+</div>
+
+</body>
+</html>
