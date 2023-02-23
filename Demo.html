@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title></title>
+  <style>
+    .nav {
+      left: 50%;
+      margin-left: -150px;
+      top: : 120px;
+      position: absolute;
+    }
+
+    .nav>li>a:hover,
+    .nav>li>a:focus,
+    .nav .open>a,
+    .nav .open>a:hover,
+    .nav .open>a:focus {
+      background: #fff;
+    }
+
+    .dropdown {
+      background: #fff;
+      border: 1px solid black;
+      border-radius: 4px;
+      width: 180px;
+    }
+
+    .dropdown-menu>li>a {
+      color: black;
+    }
+
+    .dropdown ul.dropdown-menu {
+      border-radius: 4px;
+      box-shadow: none;
+      /*        margin-top:20px;*/
+      width: 180px;
+    }
+
+    .dropdown ul.dropdown-menu:before {
+      content: "";
+      border-bottom: 10px solid;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      position: absolute;
+      top: -10px;
+      right: 16px;
+      z-index: 10;
+    }
+
+    .dropdown ul.dropdown-menu:after {
+      content: "";
+      border-bottom: 12px solid #ccc;
+      border-right: 12px solid transparent;
+      border-left: 12px solid transparent;
+      position: absolute;
+      top: -12px;
+      right: 14px;
+      z-index: 9;
+    }
+  </style>
+  <script>
+
+ function fncSelectCurrency(event) {
+ // var selectElement = document.getElementById("select");
+  //var selectedIndex = selectElement.getAttribute("value");
+  //var mainUlElement = document.getElementById("Main");
+  var currencyCode = '';
+
+  if (event == 0) {
+    // The "Select" option is selected, so do nothing
+    console.log("0");
+    return false;
+  } else if (event == 1) {
+     console.log("0");
+    currencyCode = "CAD";
+  } else if (event == 2) {
+     console.log("0");
+    currencyCode = "USD";
+  }
+
+  // if (event.target.getAttribute("data-value") === "CAD" || event.target.getAttribute("data-value") === "USD") {
+  //   // Remove existing li elements from mainUlElement
+  //   var liElements = mainUlElement.getElementsByTagName("li");
+  //   for (var i = liElements.length - 1; i >= 0; i--) {
+  //     mainUlElement.removeChild(liElements[i]);
+  //   }
+
+  //   // Create a new li element and append it to mainUlElement
+  //   var newLiElement = document.createElement("li");
+  //   newLiElement.innerHTML = event.target.getAttribute("data-value");
+  //   mainUlElement.appendChild(newLiElement);
+
+  //   // Log the selected currency code to the console
+  //   console.log("Selected currency code is: " + event.target.getAttribute("data-value"));
+  // }
+}
+
+
+</script>
+</head>
+
+<body>
+  <ul id="Main" onclick="fncSelectCurrency(0);" class="nav navbar-nav" data-value="">
+    <li class="dropdown">
+      <a href="#" id="select" class="dropdown-toggle" value="0" data-toggle="dropdown"> ----Select----<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+      <ul id="subMain" class="dropdown-menu">
+        <li><a id="CAD" onclick="fncSelectCurrency(1);" value="1" href="#">CAD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+        <li class="divider"></li>
+        <li><a id="USD" onclick="fncSelectCurrency(2);" value="2" href="#">USD <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
+      </ul>
+    </li>
+  </ul>
+
+<!--    <ul onclick="fncSelectCurrency();" id="Main">
+    <li class="dropdown">
+      <a href="#" id="select" " value="0"> ----Select----</a>
+      <ul id="subMain">..
+        <li><a id="CAD" data-value="CAD" href="#">CAD </a></li>
+        <li class="divider"></li>
+        <li><a id="USD" data-value="USD" href="#">USD</a></li>
+      </ul>
+    </li>
+  </ul> -->
+
+  <select>
+   <option>Select</option>
+   <option>CAD</option>
+   <option>USD</option>
+ </select>
+
+</body>
+
+</html>
